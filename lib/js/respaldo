@@ -1,0 +1,90 @@
+
+/*************************************/
+
+
+
+		$("#guardarm").click(function(event){
+$("#guardarm").prop('disabled',true);
+
+				var cedula= $("#cedula").val();
+				var nombre= $("#nombre").val();
+				var edad= $("#edad").val();
+				var email=$("#email").val();
+				var telefono=$("#telefono").val();
+
+if(cedula.length==''||email.length==''){
+	alert('Debe llenar todos los campos requeridos');
+	
+	$("#guardarc").removeAttr('disabled');
+}else{
+
+	var exp= /^[A-Z]\-\d{8}\-[0-9]$/;
+	var dato= document.getElementById("rif").value;
+
+	if(!exp.test(dato)){
+		alert('El formato del RIF debe ser X-00000000-X');
+			$("#guardarc").removeAttr('disabled');
+	}else{
+
+	if(nombre.indexOf(' ')==0||direccion.indexOf(' ')==0){
+		alert('Los datos introducidos no deben comenzar con un espacio en blanco');
+
+	$("#guardarc").removeAttr('disabled');
+	}else{
+
+d=0;
+	p=0;
+	var c=document.getElementById("email").value;
+	
+	for(i=1;i<c.length;i++){
+		if(c.charAt(i-1)=="@"){
+			d++;
+			
+		}
+		if(d==1){
+			if(c.charAt(i-1)=="."){
+				p++;
+			}
+			
+		}
+		
+		
+		
+	}
+	
+	if(d!=1&&p!=1){
+	
+	alert("El campo email debe tener un @ y un .");
+
+	$("#guardarc").removeAttr('disabled');
+}else{
+
+
+var form= $("#formulario2").serialize();
+$.ajax({
+	type:"POST",
+	url:"app/model/registro2.php",
+	data:form
+}).done(function(form){
+
+
+	alert('Se han guardado los datos con exito');
+
+	$("#nombre").val('');
+	$("#cedula").val('');
+	$("#email").val('');
+	$("#direccion").val('');
+	$("#telefono").val('');
+	$("#razon").val('');	
+	$("#rif").val('');			
+	$("#guardarc").removeAttr('disabled');
+
+});
+}
+	}
+}
+	}
+
+			});
+
+/********************************************************/

@@ -1,0 +1,19 @@
+
+			cedula='$cedula',
+			nombre='$nombre',
+			edad='$edad',
+			estado='$pais3',
+			ciudad='$provincia3',
+			email='$email',
+			telefono='$telefono',
+			codi='$codi',
+			naci='$naci',
+			metro='$metro',
+			altura='$altura',
+			color='$color',
+			tipo_pelo='$tipo_pelo',
+			busto='$busto',
+			cintura='$cintura',
+			cadera='$cadera',
+			color_pelo='$color_pelo'
+			".(!empty($nombre)?",foto='$img_name'":"")." 

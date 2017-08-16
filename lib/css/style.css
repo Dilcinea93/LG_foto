@@ -1,0 +1,386 @@
+body{
+background:url('../images/camarac.jpg');
+
+}
+
+#resultados{
+    padding:20px;
+}
+.notas{
+margin-top:40px;
+}
+
+.fecha{
+    margin-top:50px;
+}
+#idas{
+
+        width:70px;
+}
+#idas td{
+        border:1px solid #aaa;
+    }
+
+    #idas .currentc{
+        background:#2979ff;
+        color:#fff;
+        
+    }
+    
+    .pq{
+
+        width:30px;
+    }
+    textarea{
+        height:100px;
+    }
+#results{
+    border:1px solid #aaa;
+}
+#results th,td{
+    font-family:lucida;
+}
+#header{
+    background:#c5caed;
+}
+.presupuesto{
+    width:600px;
+}
+.grey{
+    background:#bdbdbd;
+}
+#g_presupuestos{
+    width:400px;
+    padding:20px;
+}
+#opciones{
+    margin-top:39px;
+    padding:20px;
+}
+
+#registro{
+    margin-left: 300px;
+}
+#formul td{
+    color:#000;
+}
+a{
+
+    font-family:;
+    color:#fff;
+    text-shadow:2px 3px 4px #212121;
+    text-decoration:none;
+    font-size:20px;
+}
+
+
+
+
+#precios a:hover{
+
+    text-decoration: none;
+}
+
+#menu{
+	background:#000;
+	-webkit-transition: width 0.5s;
+}
+.menu {
+	height:890px;
+	background-color:#000;
+	position:absolute;
+	z-index:1;
+    width:65px;
+    overflow:hidden;
+    -webkit-transition: width 0.5s;
+    -o-transition:width 0.5s;
+    -moz-transition:width 0.5s;
+    padding:15px;
+}
+
+.menu ul li a{
+    text-decoration:none;
+}
+.image {
+    margin-top:351px;
+}
+
+.omg {
+    height:32px;
+    width:20px;
+    margin-right:10px;
+}
+
+.menu ul li ul a{
+    color:#191970;
+}
+
+.menu ul li ul li{
+    margin-top:15px;
+}
+
+/*aqui va el hover*/
+.menu:hover{
+width:200px;
+
+
+}
+
+#reporte{
+    padding:30px;
+    background:#fff;
+    font-family:times new roman;
+}
+#menu:hover{
+	width:200px;
+}
+
+#title_ds{
+
+    padding:4px;
+    margin-top:30px;
+    height:45px;
+    overflow:hidden;
+    -webkit-transition: height 0.5s;
+    -o-transition:height 0.5s;
+    -moz-transition:height 0.5s;
+
+}
+#title_ds:hover{
+    height:100px;
+    display:block;
+
+}
+#reporte td{
+    font-family:times new roman;
+    font-size:15px;
+}
+
+.browser-default{
+    width:140px;
+    margin-top:0px;
+    height:34px;
+    float:left;
+}
+
+#title_de {
+
+    padding:4px;
+    margin-top:30px;
+    height:45px;
+    overflow:hidden;
+
+    -webkit-transition: height 0.5s;
+    -o-transition:height 0.5s;
+    -moz-transition:height 0.5s;
+
+}   
+#result{
+	padding:70px;
+	margin-top:10px;
+    border-radius:3px;
+    box-shadow:0px 10px 10px #000;
+    background:rgba(255,255,255,0.8);
+}
+#title_de:hover{
+    height:300px;
+    display:block;
+
+}
+
+
+#title_df {
+
+    padding:4px;
+    margin-top:30px;
+    height:45px;
+    overflow:hidden;
+
+    -webkit-transition: height 0.5s;
+    -o-transition:height 0.5s;
+    -moz-transition:height 0.5s;
+
+}
+#title_df:hover{
+    height:140px;
+    display:block;
+
+}
+
+#title_d {
+
+    padding:4px;
+    margin-top:30px;
+    height:45px;
+    overflow:hidden;
+
+    -webkit-transition: height 0.5s;
+    -o-transition:height 0.5s;
+    -moz-transition:height 0.5s;
+
+}
+#tabla{
+    width:300px;
+}
+
+#dos{
+    width:650px;
+}
+#title_d:hover{
+    height:130px;
+    display:block;
+
+}
+.container{
+	width:950px;
+	margin-left:30px;
+	padding:50px;
+}
+
+#title_dl {
+
+    padding:4px;
+    margin-top:30px;
+    height:73px;
+    overflow:hidden;
+
+    -webkit-transition: height 0.5s;
+    -o-transition:height 0.5s;
+    -moz-transition:height 0.5s;
+
+}
+
+#logo {
+float:left;
+height:30px;
+margin-top:15px;
+}
+
+#form{
+	background:rgba(255,255,255,0.3);
+	border-radius:4px;
+	padding:40px;
+}
+#into{
+	background:#424242;
+	border-radius:3px;
+	padding:30px;
+}
+.etiquetas{
+    font-weight:bold;
+    font-size:13px;
+    color:#08f;
+}
+input[type=text],input[type=password],textarea{
+
+}
+
+.btn{
+    background-color:#3949ab;
+}
+
+#icon{
+	width:150px;
+}
+input[type=button]{
+    
+    background-color:#3949ab;
+    margin-left:80px;
+}
+img{
+	width:700px;
+}
+
+.btn{
+	margin-left:250px;
+}
+
+h4,h2{
+    color:#000;
+    font-weight:bold;
+	text-align:center;
+    text-decoration:underline;
+}
+h5{
+    text-align:center;
+    font-weight:bold;
+}
+td{
+	font-family:times new roman;
+	font-size:20;
+}
+
+p{
+    text-align:center;
+}
+
+#opciones{
+    margin-left:400px;
+}
+
+#presupuestos select{
+    width:300px;
+}
+
+.smallest{
+    width:70px;
+}
+
+#prueba{
+    border:2px solid rd;
+    padding:4px;
+
+}
+.prueba{
+    border:2px solid rd;
+    padding:4px;
+    width:1800px;
+
+}
+
+#prueba2{
+    border:2px solid re;
+    margin-left:70px;
+    padding:4px;
+    width:400px;
+    
+}
+#paquete{
+    width:200px;
+    float:left;
+    border:1px solid rd;
+    margin-left:3px;
+}
+#cedula,#telefono{
+    width:200px;
+    margin-left:40px;
+}
+
+#cedulade{
+    width:200px;
+    margin-left:40px;
+    float:left;
+}
+
+#naci{
+    float:left;
+}
+#red{
+    color:red;
+}
+#consulta{
+    font-size:15px;
+
+}
+
+#idas{
+margin-top:30px;
+padding:20px;
+}
+
+#sub{
+    font-family:lucida;
+}
+td{
+    font-family:times new roman;
+}
