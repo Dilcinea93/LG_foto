@@ -18,7 +18,7 @@ include('funcione.php');
                                 <center><h1><i class="fa fa-search" aria-hidden="true"></i> <input type="text" name="busqueda" id="busqueda" maxlength="30" autocomplete="off" onKeyUp="buscar();" style=" font-size: 1em;"></h1></center>
             </form>
  			
- 			<div id="resultadoBusqueda"></div>
+ 			<div id="resultadoBusqueda" style="border:2px solid red;width:1500px;"></div>
         
             <script type="	text/javascript">
             		$(document).ready(function() {

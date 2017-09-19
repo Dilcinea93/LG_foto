@@ -6,8 +6,8 @@
 	$result=$conexion->query($query);
   
 ?>
-
-    	<table id="idas" width="1200"class="striped">
+</br>
+    	<table id="idas" class="table" style="width:100%;" class="striped">
     		<tr class="currentc">
                 <th>C&eacute;dula</th>
                 <th>Nombre</th>

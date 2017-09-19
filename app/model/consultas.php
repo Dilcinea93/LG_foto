@@ -48,8 +48,8 @@ if (isset($consultaBusqueda)) {
 
 			?>
 
-<table class="table" style="width:100%;">
-				<tr bgcolor= "#8299af" style="color:white;">
+<table id="idas" class="table" style="width:250%;">
+				<tr bgcolor= "#4265f4" style="color:white;">
 					<td><strong>Cédula</strong></td>
 					<td><strong>Nombre</strong></td>
 					<td><strong>Ciudad</strong></td>

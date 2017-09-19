@@ -81,14 +81,14 @@ function cambia_provincia(){
 </script>
 
 <h3>Consultar por nombre</h3>
-<div  id="tabla">
+<div id="tabla">
   <form accept-charset="utf-8" method="POST" >
            <center>
                <h1>
                    <i class="fa fa-search" aria-hidden="true"></i> <input type="text" name="busqueda" id="busqueda" maxlength="30" autocomplete="off" onKeyUp="buscar();" style=" font-size: 1em;">
                </h1>
            </center>
-          <div id="resultadoBusqueda">
+          <div id="resultadoBusqueda" style="width:1250px;">
           </div>
   </form>
 </div>
@@ -126,7 +126,7 @@ function cambia_provincia(){
               <option value="24">Zulia</option>
               </select>
     </form>
-    <div id="resultados3">
+    <div id="resultados3" style="width:1250px;">
       
     </div>
 </div>

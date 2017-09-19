@@ -2,12 +2,16 @@
 include('../../config.php');
 
 
-	$conexion=new mysqli('localhost','root','','l_g_fotografia2');
 //Variable de búsqueda
 $consultaBusqueda = $_POST['valorBusqueda'];
 
 //Comprueba si $consultaBusqueda está seteado
 
+    $query="select e.id,e.nombre from estados e inner join modelos on e.id=m.estado";
+	$result=$conexion->query($query);
+	while($rs=$result->fetch_array()){
+		$estado=$rs['nombre'];
+	}
 if (isset($consultaBusqueda)) {
 
 	//Selecciona todo de la tabla mmv001 
@@ -20,7 +24,8 @@ if (isset($consultaBusqueda)) {
 	");
 
 
-
+echo $query;
+die();
 	//Obtiene la cantidad de filas que hay en la consulta
 	$filas = mysqli_num_rows($consulta);
 
@@ -42,7 +47,7 @@ if (isset($consultaBusqueda)) {
 			?>
 
 <table class="table">
-				<tr bgcolor= "#8299af" style="color:white;">
+				<tr bgcolor= "#4265f4" style="color:white;">
 					<td><strong>Cédula</strong></td>
 					<td><strong>Nombres y Apellidos</strong></td>
 					<td><strong>Edad</strong></td>

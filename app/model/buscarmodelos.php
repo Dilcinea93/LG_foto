@@ -1,9 +1,10 @@
 <?
 include('../../config.php');
-
+extract($_POST);
 	$conexion=new mysqli('localhost','root','','l_g_fotografia2');
 	
 $query="select * from modelos where cedula='$cedula'";
+echo "query ".$query;
 $consulta=$conexion->query($query);
 while($rs=$consulta->fetch_array()){
 	$cedula=$rs['cedula'];
