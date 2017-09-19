@@ -5,37 +5,38 @@
 		where estados.id=proveedores.estado and estados.id='$estados'");
 ?>
 
-    	<table id="idas" class="striped">
+    	<table id="idas" class="striped" style="width:100%;">
     		<tr class="currentc">
-                <th>Cedula</th>
-                <th>Nombre</th>
-                <th>Razón Social</th>
-                <th>Servicio</th>
-                <th>Precio</th>
-                <th>Ciudad</th>
-                <th>Teléfono</th>
+                <th>Nacionalidad y cédula</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>RIF</th>
+                    <th>Razon social</th>
+                    <th>Servicio</th>
+                    <th>Precio</th>
+                    <th>Ciudad</th>
     		</tr><?
 while($rw= $result->fetch_array()){
-$nacionalidad=$rw['naci'];
-$cedula=$rw['ci_r'];
-    $ciudad= $rw['ciudad'];
+$nacionalidad=$rw['naci']."-".$rw['ci_r'];
     $nombre=$rw['nombre_r'];
-    $nacionalidad=$rw['naci'];
+    $telefono= '0'.$rw['cod_a'].'-'.$rw['telefono'];
+    $rif=$rw['rif'];
     $razon=$rw['razon'];
     $servicio=$rw['servicio'];
-    $telefono= '0'.$rw['cod_a'].'-'.$rw['telefono'];
     $precio= $rw['precio'];
+    $ciudad= $rw['ciudad'];
 
 
 ?>
     <tr>
-        <td><? echo $nacionalidad."-".$cedula?></td>
+        <td><? echo $nacionalidad?></td>
         <td><? echo $nombre?></td>
+        <td><? echo $telefono?></td>
+        <td><? echo $rif?></td>
         <td><? echo $razon?></td>
         <td><? echo $servicio?></td>
         <td><? echo $precio?></td>
         <td><? echo $ciudad?></td>
-        <td><? echo $telefono?></td>
     </tr>
     <?
 }

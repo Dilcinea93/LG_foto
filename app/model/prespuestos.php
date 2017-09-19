@@ -6,7 +6,7 @@ include('../../config.php');
 $consulta=$conexion->query("select * from clients,registro_p where clients.id_c=registro_p.id_c and clients.id_c='$cedula' order by id_p asc");
 
 ?>
-	<table id="idas" class="striped">
+	<table id="idas" class="striped" style="width:100%;">
 
 
 	<tr class="currentc">

@@ -18,6 +18,6 @@
 	</tr>	
 </table>
 	
-<div id="idas">
+<div id="idas" style="width:100%;">
 </div>
 	

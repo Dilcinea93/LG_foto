@@ -1,0 +1,64 @@
+<br />
+<b>Notice</b>:  Undefined variable: row in <b>C:\xampp\htdocs\galpa_export\vendedores\excel-quotation.php</b> on line <b>60</b><br />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>
+        </title>
+        <style>
+            body{ font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+            .text_white_b_12 {color:#FFFFFF; font-family:Arial; font-size:12px; font-weight:bold;}
+            thead { display: table-header-group; }
+            tfoot { display: table-footer-group; }
+            .table { margin-bottom: 5px; /*margin-bottom: 18px;*/}
+        </style>
+    </head>
+    <body>
+        <table id="products_list" width="700" border="1" cellspacing="0" cellpadding="3">
+            <thead>
+            <tr><td colspan="5"><div align="center" style="font-size:20px"><h3 align="center"><strong>Contenedores</strong></h3></div></td></tr>
+           
+
+           <tr>
+
+                    <td colspan="4" align='center'><h3><strong>Peso Total:</strong>
+                    &nbsp;1,81&nbsp;lbs&nbsp;&nbsp;
+                    Vol&uacute;men Total:</strong>
+                    &nbsp;0,06&nbsp;pie<sup>3</sup></h3></td>
+
+          </tr>
+          <tr></tr>
+                <tr>
+                    <td colspan="5"><div align="center" style="font-size:20px"><strong>Current Quotation's Products</strong></div></td>
+                </tr>
+                <tr>
+                    <td width="138" bgcolor="#cccccc"><strong><div align="center">Code</strong></div></td>
+                    <td width="486" bgcolor="#cccccc"><strong><div align="center">Description</div></strong></td>
+                    <td width="90" bgcolor="#cccccc"><strong><div align="center">Unit Price</div></strong></td>
+                    <td width="80" bgcolor="#cccccc"><strong><div align="center">Quantity</div></strong></td>
+                    <td width="130" bgcolor="#cccccc"><strong><div align="center">Price</div></strong></td>
+                </tr>
+            </thead>
+                            <tr height="40">
+                    <td>G037H6478</td>
+                    <td>DANFOSS CONTACTOR COIL 440V 50-60HZ FOR DP25, DP30 AND DP40</td>
+                    <td><div align="right">6,74</div></td>
+                    <td><div align="right">1</div></td>
+                    <td><div align="right">6,74</div></td>
+                </tr>
+                            <tr>
+                <td colspan="4"><div align="right"><strong>Sub-Total:</strong></div></td>
+                <td><div align="right">6.74 USD</div></td>
+            </tr>
+            <tr>
+                <td colspan="4"><div align="right"><strong>Tax:</strong></div></td>
+                <td><div align="right">0,0 %</div></td>
+            </tr>
+            <tr>
+                <td colspan="4"><div align="right"><strong>Total:</strong></div></td>
+                <td><div align="right">6,74 USD</div></td>
+            </tr>
+        </table>
+    </body>
+</html>

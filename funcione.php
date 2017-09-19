@@ -73,7 +73,7 @@ function rif2($id){?>
 				<option>V</option>
 				<option>P</option>
 			</select>
-		<input type="text" placeholder="<?=$place?>" id="<?=$id?>" name="<?=$nombre?>" onkeyup="maxylet(this,8);" class="smallest"  onkeypress="return permite(event, 'num')" >
+		<input type="text" id="<?=$id?>" name="<?=$nombre?>" onkeyup="maxylet(this,8);" class="smallest"  onkeypress="return permite(event, 'num')" >
 		</div>
 		<?
 	};

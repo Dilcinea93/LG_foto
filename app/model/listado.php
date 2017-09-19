@@ -29,9 +29,9 @@ la lista de consulta esta vacia. Porfavor seleccione un valor</h3>';
 	<a align="center"><u>Listado de <?=$queryocupacion."s"?></u></a>
 </div>
 
-<div id="container">
+<div id="container" style="border:2px solid red;">
 
-<table id="d" border="1">
+<table id="d" border="1" style="width:100%;">
 		<tr id="cabecera">
 					<th>Cédula</th>
 					<th>Nombre</th>

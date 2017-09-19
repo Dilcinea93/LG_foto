@@ -61,7 +61,7 @@ function cambia_provincia(){
 </script>
 
 
-<form name="f1" action="app/model/registromodelos.php" method="post" enctype="multipart/form-data">
+<form name="f1" method="post" enctype="multipart/form-data" id="formmodels">
 
 	<h2>Registro de Modelos</h2>
 
@@ -234,18 +234,10 @@ email('email','email',null);
 <input type="submit" class="btn btn-large" value="Guardar" id="guardarm" name="guardarm">
 
 </form>
-<?
-	/*
-		no se guardaban las modelos. El codigo de insercion staba bien.
-		hice como en el otro archivo y borre un poco de campos y no funciono.
-		el boton aqui n el form no tenia name, se lo puse y no funciono.
-		era la validacion en el php. no se que problema hay pero el peo fue con el isset($_POST['guardarm'])
-	*/
-?>
 
 
 <?
-		/*mostrar foto de modelo. Pero pendiente de la ruta... */
+		/*mostrar foto de modelo. Pero pendiente de la ruta... 
 $user="root";$pass="";$host="localhost";$db="l_g_fotografia2";$adminemail="";
 	$con=mysql_connect($host,$user,$pass) or z();mysql_select_db($db,$con)or z();
 		$rs=mysql_query("select * from modelos
@@ -260,4 +252,4 @@ $user="root";$pass="";$host="localhost";$db="l_g_fotografia2";$adminemail="";
 				
 			</tr>
 		<?}
-	?>
+	*/?>

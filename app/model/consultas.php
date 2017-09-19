@@ -6,7 +6,7 @@ $rec=$conexion->query("select * from clients where nombre_c='$nombre_c'");
 
 ?>
 
-	<table id="idas" class="striped">
+	<table id="idas" class="striped" style="width:100%;">
 	<tr class="currentc">
 		<th>Nombre del cliente</th>
 		<th>Razon social</th>
