@@ -58,7 +58,6 @@ if (isset($consultaBusqueda)) {
 						while($resultados = $consulta->fetch_array()) {
 			$ci = $resultados['cedula'];
 			$nombre = $resultados['nombre'];
-			$fNacimiento = $resultados['apellido'];
 			$edad = $resultados['edad'];
 			$ciudad = $resultados['ciudad'].' - Estado '.$resultados['estado'];
 			$tlf = $resultados['codi'].'-'.$resultados['telefono'];

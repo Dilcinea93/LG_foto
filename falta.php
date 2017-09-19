@@ -23,6 +23,7 @@
 <ul>
 
 	<li>como validar que los select esten llenos? (funciones.js linea 241) para que se coloque datos en el campo de direccion y de ciudad del proveedor y del cliente</li>
+	<li>En cons_cli, linea 24, no se porque esa funcion se ejecuta es la segunda vez q la llamas.. la primera vez no se hace la llamada al ajax. porquee??</li>
 
 </ul>
 

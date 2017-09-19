@@ -178,33 +178,34 @@ function adress($nombre,$id,$provincia,$id2){
 			<div id="direccion" style="height:30px;">	
 
 
-<select name=<?=$nombre?> id="<?=$id?>"class="browser-default" onchange="cambia_provincia()">
-<option value="0" selected>Seleccione...
-<option value="1">Aragua
-<option value="2">Apure
-<option value="3">Amazonas
-<option value="4">Anzoategui
-<option value="5">Barinas
-<option value="6">Bolivar
-<option value="7">Carabobo
-<option value="8">Cojedes
-<option value="9">Delta Amacuro
-<option value="10">Distrito Capital
-<option value="11">falcón
-<option value="12">Guárico
-<option value="13">Lara
-<option value="14">Mérida
-<option value="15">Miranda
-<option value="16">Monagas
-<option value="17">Nueva esparta
-<option value="18">Portuguesa
-<option value="19">Sucre
-<option value="20">Táchira
-<option value="21">Trujillo
-<option value="22">Vargas
-<option value="23">Yaracuy
-<option value="24">Zulia
+<select name="<?=$nombre?>" id="<?=$id?>" class="browser-default" onchange="cambia_provincia()">
+<option value="0" selected>Seleccione...</option>
+<option value="1">Aragua</option>
+<option value="2">Apure</option>
+<option value="3">Amazonas</option>
+<option value="4">Anzoategui</option>
+<option value="5">Barinas</option>
+<option value="6">Bolivar</option>
+<option value="7">Carabobo</option>
+<option value="8">Cojedes</option>
+<option value="9">Delta Amacuro</option>
+<option value="10">Distrito Capital</option>
+<option value="11">falcón</option>
+<option value="12">Guárico</option>
+<option value="13">Lara</option>
+<option value="14">Mérida</option>
+<option value="15">Miranda</option>
+<option value="16">Monagas</option>
+<option value="17">Nueva esparta</option>
+<option value="18">Portuguesa</option>
+<option value="19">Sucre</option>
+<option value="20">Táchira</option>
+<option value="21">Trujillo</option>
+<option value="22">Vargas</option>
+<option value="23">Yaracuy</option>
+<option value="24">Zulia</option>
 </select>
+
 </div>
 		<?
 	}

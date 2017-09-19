@@ -1,8 +1,40 @@
 <?
 include('funcione.php');
 ?>
+       <script type=" text/javascript">
+                $(document).ready(function() {
+                                    $("#resultadoBusqueda").html('<center><p>Sin instrucciones de busqueda</p></center>');
+                                    
+                                });
 
-<script>
+                                function buscar() {
+                                    var textoBusqueda = $("#busqueda").val();
+ 
+                                    if (textoBusqueda != "") {
+                                        $.post("app/model/consultas.php", 
+                                            {valorBusqueda: textoBusqueda}, 
+                                            function(mensaje) {
+                                            $("#resultadoBusqueda").html(mensaje);
+                                        }); 
+                                    } else { 
+                                         $("#resultadoBusqueda").html('<center><p>Sin instrucciones de busqueda</p></center>');
+                              };
+                     };
+
+                     function funcion(){
+                      /*no entiendo porque este codigo se ejecuta pero la segunda vez que se llama... la primera vez entra a la funcion, pero no hace la llamada ajax.
+                      */
+                      $("#consultacliente").change(function(event){
+                          var formubic= $("#formubic").serialize();
+                          $.ajax({
+                            url: 'app/model/ubicacion3.php',
+                            type:'post',
+                            data: formubic
+                          }).done(function(formubic){
+                            $("#resultados3").html(formubic);
+                          });
+                        });
+                    };
 var provincias_1=new Array("-","turmero","la victoria","Barcelona","Cagua","Villa de cura")
 var provincias_2=new Array("-","Achaguas","Bruzual","Biruaca","Elorza","San fernando")
 var provincias_3=new Array("-","Puerto ayacucho","San fernando de atabapo","San carlos de rio negro","Guainia")
@@ -50,33 +82,51 @@ function cambia_provincia(){
 
 <h3>Consultar por nombre</h3>
 <div  id="tabla">
-<form id="formcliente">
-
-<?
-text('nombre_c','nombre_c','nombre del cliente')
-	
-?>
-</form>
-
+  <form accept-charset="utf-8" method="POST" >
+           <center>
+               <h1>
+                   <i class="fa fa-search" aria-hidden="true"></i> <input type="text" name="busqueda" id="busqueda" maxlength="30" autocomplete="off" onKeyUp="buscar();" style=" font-size: 1em;">
+               </h1>
+           </center>
+          <div id="resultadoBusqueda">
+          </div>
+  </form>
 </div>
 
-<form id="formubic">
 <div id="dos">
-<div id="resultados2"></div>
-
-
-<h3>Consultar por zona</h3>
-
-
-
-
-<span class="etiquetas">Que estado de Venezuela deseas consultar?</span>
-</br>
-<?adresconsulta('estados3','estados3')?>
-
-
-<div id="resultados3">
-  
+  <h3>Consultar por zona</h3>
+    <form  id="formubic" name="f1">
+      <span class="etiquetas">Que estado de Venezuela deseas consultar?</span>
+        </br>
+              <select id="consultacliente" name="consultacliente" onchange="funcion()" class="browser-default">
+              <option value="0" selected>Seleccione...</option>
+              <option value="1">Aragua</option>
+              <option value="2">Apure</option>
+              <option value="3">Amazonas</option>
+              <option value="4">Anzoategui</option>
+              <option value="5">Barinas</option>
+              <option value="6">Bolivar</option>
+              <option value="7">Carabobo</option>
+              <option value="8">Cojedes</option>
+              <option value="9">Delta Amacuro</option>
+              <option value="10">Distrito Capital</option>
+              <option value="11">falcón</option>
+              <option value="12">Guárico</option>
+              <option value="13">Lara</option>
+              <option value="14">Mérida</option>
+              <option value="15">Miranda</option>
+              <option value="16">Monagas</option>
+              <option value="17">Nueva esparta</option>
+              <option value="18">Portuguesa</option>
+              <option value="19">Sucre</option>
+              <option value="20">Táchira</option>
+              <option value="21">Trujillo</option>
+              <option value="22">Vargas</option>
+              <option value="23">Yaracuy</option>
+              <option value="24">Zulia</option>
+              </select>
+    </form>
+    <div id="resultados3">
+      
+    </div>
 </div>
-</div>
-</form>

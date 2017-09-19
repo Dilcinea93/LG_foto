@@ -61,7 +61,7 @@ function cambia_provincia(){
 </script>
 
 
-<form name="f1" method="post" enctype="multipart/form-data" id="formmodels">
+<form name="f1" action="app/model/registromodelos.php" method="post" enctype="multipart/form-data" id="formmodels">
 
 	<h2>Registro de Modelos</h2>
 

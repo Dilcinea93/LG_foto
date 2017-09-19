@@ -1,8 +1,10 @@
 <?
 	include('../../config.php');
     extract($_POST);
-	$result=$conexion->query("select * from estados inner join clients
-		where estados.id=clients.estado and estados.id='$estados3'");
+    $query="select * from estados inner join clients
+        where estados.id=clients.estado and estados.id='$consultacliente'";
+	$result=$conexion->query($query);
+  
 ?>
 
     	<table id="idas" width="1200"class="striped">
